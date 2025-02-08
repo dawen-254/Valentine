@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8B0000; /* Deep Red Background */
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        /* Text Styling */
+        .valentine-text {
+            font-size: 36px;
+            font-weight: bold;
+            color: #FFC0CB; /* Pink Text */
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Button Styling */
+        .valentine-button {
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background: transparent;
+            border: 2px solid #FFC0CB;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        /* Hover Effect */
+        .valentine-button:hover {
+            background-color: #FFC0CB;
+            color: #8B0000;
+            border-color: #8B0000;
+        }
+
+        /* Broken Heart Page */
+        .broken-heart-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #8B0000;
+            color: white;
+        }
+
+        .broken-heart {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Page -->
+    <div>
+        <h1 class="valentine-text">CAN YOU BE MY VALENTINE?</h1>
+        <div class="button-container">
+            <a href="DNAheart.html" >
+                <button class="valentine-button">YES</button>
+            </a>
+            <a href="broken.html" >
+                <button class="valentine-button">NO</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- Broken Heart Page -->
+    <div id="broken-heart" class="broken-heart-page" style="display: none;">
+        <span class="broken-heart">💔</span>
+        <h2>You Broke My Heart!</h2>
+    </div>
+
+    <script>
+        // Function to show the broken heart page
+        function showBrokenHeart(event) {
+            event.preventDefault();
+            document.querySelector('broken.html').style.display = 'flex';
+        }
+    </script>
+</body>
+</html>

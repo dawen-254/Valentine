@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken Heart</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0e0404; /* Deep Red Background */
+            font-family: 'Arial', sans-serif;
+            color: white;
+        }
+
+        /* Broken Heart Emoji and Text */
+        .broken-heart-emoji {
+            font-size: 100px;
+            margin-bottom: 20px;
+            animation: brokenHeartPulse 2s infinite;
+        }
+
+        .broken-message {
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Animation for the Broken Heart */
+        @keyframes brokenHeartPulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Broken Heart Page Content -->
+    <div>
+        <span class="broken-heart-emoji">💔</span>
+        <h1 class="broken-message">You Broke My Heart!</h1>
+    </div>
+</body>
+</html>
